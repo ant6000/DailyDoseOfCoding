@@ -1,5 +1,9 @@
 import 'dart:math';
-
+/*
+Write a Java program to create a class called "Circle" 
+with a radius attribute. You can access and modify this attribute.
+Calculate the area and circumference of the circle.
+*/
 class Circle {
   double _radius;
   Circle(this._radius);
