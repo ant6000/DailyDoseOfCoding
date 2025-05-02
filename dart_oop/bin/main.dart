@@ -1,29 +1,12 @@
-import 'package:dart_oop/pract7.dart';
+import 'package:dart_oop/pract10.dart';
 
 void main(List<String> arguments) {
-  Bank bank = Bank();
-  Account account1 = Account(101, 50000, 'Antor');
-  Account account2 = Account(102, 50000, 'Pahlovi');
+  Student student1 = Student('Antor', 'A+ ', ['Flutter', 'dart']);
+  Student student2 = Student('Pahlovi', 'A+ ', ['node js', 'java script']);
 
-  bank.createAccount(account1);
-  bank.createAccount(account2);
-  account1.deposit(100);
+  student1.setCource = 'AI';
+  student2.removeCource = 'node js';
 
-  final accounts = bank.getAllAccounts;
-
-  for (var account in accounts) {
-    print(account.getAccountInfo);
-  }
-
-  account1.deposit(5.4);
-
-  for (var account in accounts) {
-    print(account.getAccountInfo);
-  }
-
-  account1.widthdraw(10.5);
-
-  for (var account in accounts) {
-    print(account.getAccountInfo);
-  }
+  print(student1.getCources);
+  print(student2.getCources);
 }
