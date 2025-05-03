@@ -1,23 +1,15 @@
 import 'package:dart_oop/pract12.dart';
+import 'package:dart_oop/pract13.dart';
 
 void main(List<String> arguments) {
-  Airplane flight1 = Airplane(
-    'CDE345',
-    'London',
-    DateTime(2025, 07, 01, 12, 00, 00).toLocal(),
-  );
-  Airplane flight2 = Airplane(
-    'KUI765',
-    'New York',
-    DateTime(2025, 05, 01, 12, 00, 00).toLocal(),
-  );
+  Inventory inventory = Inventory();
+  Product product1 = Product(1001, 'Apple iphone 16', 1500000, 50);
+  Product product2 = Product(1002, 'Samsung s23 ultra', 1200000, 80);
+  Product product3 = Product(1003, 'Xaomi mi 24 ultra', 12000, 180);
 
-  print(flight1.checkStatus());
-  print(flight2.checkStatus());
+  inventory.addProduct(product1);
+  inventory.addProduct(product2);
 
-  flight1.delayFlight(Duration(minutes: 10));
-  flight1.delayFlight(Duration(minutes: 30));
-
-  print(flight1.checkStatus());
-  print(flight2.checkStatus());
+  inventory.checkInventory();
+  inventory.checkInventory();
 }
