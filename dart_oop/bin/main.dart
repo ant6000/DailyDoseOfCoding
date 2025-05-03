@@ -1,12 +1,23 @@
-import 'package:dart_oop/pract10.dart';
+import 'package:dart_oop/pract12.dart';
 
 void main(List<String> arguments) {
-  Student student1 = Student('Antor', 'A+ ', ['Flutter', 'dart']);
-  Student student2 = Student('Pahlovi', 'A+ ', ['node js', 'java script']);
+  Airplane flight1 = Airplane(
+    'CDE345',
+    'London',
+    DateTime(2025, 07, 01, 12, 00, 00).toLocal(),
+  );
+  Airplane flight2 = Airplane(
+    'KUI765',
+    'New York',
+    DateTime(2025, 05, 01, 12, 00, 00).toLocal(),
+  );
 
-  student1.setCource = 'AI';
-  student2.removeCource = 'node js';
+  print(flight1.checkStatus());
+  print(flight2.checkStatus());
 
-  print(student1.getCources);
-  print(student2.getCources);
+  flight1.delayFlight(Duration(minutes: 10));
+  flight1.delayFlight(Duration(minutes: 30));
+
+  print(flight1.checkStatus());
+  print(flight2.checkStatus());
 }
