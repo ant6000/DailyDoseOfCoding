@@ -1,17 +1,11 @@
-import 'package:dart_oop/pract.15.dart';
+import 'package:dart_oop/pract16.dart';
 
 void main(List<String> arguments) {
-  MusicLibrary musicLibrary = MusicLibrary();
-  Song song1 = Song('HEllo', 'Adle');
-  Song song2 = Song('Perfect', 'Ed shrin');
-  Song song3 = Song('Lover ', 'Taylor swift');
-  Song song4 = Song('Animal', 'Maroon 5');
-  Song song5 = Song('Home', 'Justim biber');
+  Shape reactange = Rectangle(10, 20);
+  Shape circle = Circle(10);
+  Shape triangle = Triangle(10, 20);
 
-  musicLibrary.addSong(song1);
-  musicLibrary.addSong(song2);
-  musicLibrary.addSong(song3);
-  musicLibrary.addSong(song4);
-  musicLibrary.addSong(song5);
-  musicLibrary.playRandomSong();
+  print('Reactange area: ${reactange.calculateArea()}');
+  print('circle area: ${circle.calculateArea()}');
+  print('triangle area: ${triangle.calculateArea()}');
 }
