@@ -1,15 +1,17 @@
-import 'package:dart_oop/pract12.dart';
-import 'package:dart_oop/pract13.dart';
+import 'package:dart_oop/pract.15.dart';
 
 void main(List<String> arguments) {
-  Inventory inventory = Inventory();
-  Product product1 = Product(1001, 'Apple iphone 16', 1500000, 50);
-  Product product2 = Product(1002, 'Samsung s23 ultra', 1200000, 80);
-  Product product3 = Product(1003, 'Xaomi mi 24 ultra', 12000, 180);
+  MusicLibrary musicLibrary = MusicLibrary();
+  Song song1 = Song('HEllo', 'Adle');
+  Song song2 = Song('Perfect', 'Ed shrin');
+  Song song3 = Song('Lover ', 'Taylor swift');
+  Song song4 = Song('Animal', 'Maroon 5');
+  Song song5 = Song('Home', 'Justim biber');
 
-  inventory.addProduct(product1);
-  inventory.addProduct(product2);
-
-  inventory.checkInventory();
-  inventory.checkInventory();
+  musicLibrary.addSong(song1);
+  musicLibrary.addSong(song2);
+  musicLibrary.addSong(song3);
+  musicLibrary.addSong(song4);
+  musicLibrary.addSong(song5);
+  musicLibrary.playRandomSong();
 }
