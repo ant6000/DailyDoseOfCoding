@@ -1,11 +1,18 @@
-import 'package:dart_oop/pract16.dart';
+import 'package:dart_oop/pract18.dart';
 
 void main(List<String> arguments) {
-  Shape reactange = Rectangle(10, 20);
-  Shape circle = Circle(10);
-  Shape triangle = Triangle(10, 20);
+  Resturant resturant1 = Resturant();
+  Menu menu1 = Menu('Porota', 10);
+  Menu menu2 = Menu('Vaji', 20);
+  Menu menu3 = Menu('Cha', 10);
+  resturant1.setMenu = menu1;
+  resturant1.setMenu = menu2;
+  resturant1.setMenu = menu3;
 
-  print('Reactange area: ${reactange.calculateArea()}');
-  print('circle area: ${circle.calculateArea()}');
-  print('triangle area: ${triangle.calculateArea()}');
+  print(resturant1.getMenues);
+  menu1.giveRating = 2;
+  menu1.giveRating = 3;
+  menu1.giveRating = 1;
+  menu1.giveRating = 1;
+  print(menu2.calculateAverageRating());
 }
